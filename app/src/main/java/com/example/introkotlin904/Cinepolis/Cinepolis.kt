@@ -83,7 +83,7 @@ class Cinepolis : AppCompatActivity() {
                     return@setOnClickListener
                 }
 
-                val precioBase = 12000.0
+                val precioBase = 12.00
                 var total = boletos * precioBase
 
                 when {
