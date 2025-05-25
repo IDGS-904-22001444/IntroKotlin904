@@ -30,6 +30,20 @@
         android:text="Ejemplo 2new"
         />
 
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Random number"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Cadena"
+        />
+
 
 
 </LinearLayout>

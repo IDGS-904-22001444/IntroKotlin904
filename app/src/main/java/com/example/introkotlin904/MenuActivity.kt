@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.introkotlin904.Cinepolis.Cinepolis
 import com.example.introkotlin904.Tem2App.Ejemplo6Activity
 import com.example.introkotlin904.tema1Ejemplos.Ejemplo1Activity
+import com.example.introkotlin904.tema4.Ejemplo7Activity
+import com.example.introkotlin904.tema8.Ejemplo8
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +31,17 @@ class MenuActivity : AppCompatActivity() {
         val btnEjemplo2 = findViewById<Button>(R.id.btn3)
         btnEjemplo2.setOnClickListener {
             navegateToEjemplo2()
+        }
+
+
+        val btnRandom = findViewById<Button>(R.id.btn4)
+        btnRandom.setOnClickListener {
+            navegateToRandomNumber()
+        }
+
+        val btnCadena = findViewById<Button>(R.id.btn5)
+        btnRandom.setOnClickListener {
+            navegateToCadena()
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -54,6 +67,16 @@ class MenuActivity : AppCompatActivity() {
     private fun navegateToEjemplo1() {
     val intent = Intent(this, Ejemplo1Activity::class.java)
     startActivity(intent)
-}
+    }
+
+    private fun navegateToRandomNumber(){
+        val intent = Intent(this, Ejemplo7Activity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navegateToCadena(){
+        val intent = Intent(this, Ejemplo8::class.java)
+        startActivity(intent)
+    }
 
 }
