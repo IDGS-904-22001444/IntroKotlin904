@@ -44,6 +44,14 @@
         android:text="Cadena"
         />
 
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Diccionario"
+        />
+
+
 
 
 </LinearLayout>

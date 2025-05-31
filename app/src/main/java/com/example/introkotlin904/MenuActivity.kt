@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.introkotlin904.Cinepolis.Cinepolis
 import com.example.introkotlin904.Tem2App.Ejemplo6Activity
+import com.example.introkotlin904.diccionario.Diccionario
 import com.example.introkotlin904.tema1Ejemplos.Ejemplo1Activity
 import com.example.introkotlin904.tema4.Ejemplo7Activity
 import com.example.introkotlin904.tema8.Ejemplo8
@@ -44,6 +45,11 @@ class MenuActivity : AppCompatActivity() {
             navegateToCadena()
         }
 
+        val btnDiccionario = findViewById<Button>(R.id.btn6)
+        btnDiccionario.setOnClickListener {
+            navegateToDiccionario()
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -55,6 +61,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navegateToEjemplo2() {
     val intent = Intent(this, Ejemplo6Activity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navegateToDiccionario() {
+        val intent = Intent(this, Diccionario::class.java)
         startActivity(intent)
     }
 
